@@ -1,6 +1,6 @@
 package fmy.latian.mvpexercise003.ui.main;
 
-
+import android.content.Context;
 
 import dagger.Module;
 import dagger.Provides;
@@ -11,20 +11,20 @@ import dagger.Provides;
 
 @Module public class MainPresenterModule {
 
-//    private final Context ctx;
+    private final Context ctx;
 
     private final MainContract.View view;
 
-    public MainPresenterModule(  MainContract.View view) {
-//        this.ctx = ctx;
+    public MainPresenterModule( Context ctx, MainContract.View view) {
+        this.ctx = ctx;
         this.view = view;
 
     }
 
-//    @Provides
-//    Context provideContext(){
-//        return ctx;
-//    }
+    @Provides
+    Context provideContext(){
+        return ctx;
+    }
 
     @Provides
     MainContract.View provideMainContractView(){

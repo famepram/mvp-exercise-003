@@ -33,7 +33,8 @@ public class DBFunction {
                 DBConstant.TABLE_COLNAME_MENU_PRICE
         };
 
-        Cursor c = db.query(DBConstant.TABLE_NAME_MENU, projection, null, null, null, null, null);
+        //Cursor c = db.query(DBConstant.TABLE_NAME_MENU, projection, null, null, null, null, null);
+        Cursor  c = db.rawQuery("select * from "+DBConstant.TABLE_NAME_MENU,null);
         if(c != null && c.getCount() > 0){
             while(c.moveToNext()){
                 String _id      = c.getString(c.getColumnIndexOrThrow(DBConstant.TABLE_COLNAME_MENU_ID));

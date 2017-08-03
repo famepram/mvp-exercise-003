@@ -1,5 +1,7 @@
 package fmy.latian.mvpexercise003.ui.main;
 
+import android.content.Context;
+
 import java.util.List;
 
 import fmy.latian.mvpexercise003.data.models.Menu;
@@ -15,11 +17,15 @@ public interface MainContract {
 
         void onNoMenuAvailable();
 
+        void onListItemClicked(Menu menu);
+
     }
 
     interface Presenter {
-        void loadMenu();
+        void loadMenus();
 
         void addMenu(String name, String category, int price);
+
+        void loadMenuItem(Menu menu);
     }
 }
