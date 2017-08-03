@@ -4,8 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MVPExercise003.iml" filepath="$PROJECT_DIR$/MVPExercise003.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mvp-exercise-003.iml" filepath="$PROJECT_DIR$/mvp-exercise-003.iml" />
     </modules>
   </component>
 </project>

@@ -6,9 +6,14 @@
     android:layout_height="match_parent"
     tools:context="fmy.latian.mvpexercise003.ui.main.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <ListView
+        android:id="@+id/listview_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+    <FrameLayout
+        android:id="@+id/fl_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></FrameLayout>
 
 </RelativeLayout>

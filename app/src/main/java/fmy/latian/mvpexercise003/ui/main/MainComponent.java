@@ -6,7 +6,8 @@ package fmy.latian.mvpexercise003.ui.main;
 
 import dagger.Component;
 
-@Component(modules = MainModule.class)
+@Component(modules = MainPresenterModule.class)
 public interface MainComponent{
+
     void inject(MainActivity mainActivity);
 }
